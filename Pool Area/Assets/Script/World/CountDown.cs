@@ -18,8 +18,8 @@ public class CountDown : MonoBehaviour {
 			myTimer -= Time.deltaTime;
 			text.text = Mathf.Ceil(myTimer).ToString();
 		}else {
+			Time.timeScale = 0; 
 			TimesUpPopUp.SetActive (true);
-			Time.timeScale = 0;
 		}
 		
 	}

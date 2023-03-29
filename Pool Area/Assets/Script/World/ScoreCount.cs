@@ -8,12 +8,15 @@ public class ScoreCount : MonoBehaviour {
 	public static Text scoreText;
 	public GameObject P1Win;
 	public float WinCon;
+	public Slider HP_Bar;
 
 	void Start () {
 		PlayerPrefs.DeleteAll();
 		scoreText = GetComponent<Text>();
 		score = PlayerPrefs.GetInt("scoreData",0);
 		UpdateScore (0);
+		HP_Bar.maxValue = WinCon;
+		HP_Bar.minValue = 0;
 	}
 	
 	public static void UpdateScore(int value) {
@@ -28,6 +31,7 @@ public class ScoreCount : MonoBehaviour {
 			P1Win.SetActive(true);
 			Time.timeScale = 0;
 		}
+		HP_Bar.value = score;
 	}
 }
 
