@@ -15,7 +15,7 @@ public class ScoreCount : MonoBehaviour {
 		scoreText = GetComponent<Text>();
 		score = PlayerPrefs.GetInt("scoreData",0);
 		UpdateScore (0);
-		HP_Bar.maxValue = WinCon;
+		HP_Bar.maxValue = WinCon -1;
 		HP_Bar.minValue = 0;
 	}
 	
@@ -28,8 +28,8 @@ public class ScoreCount : MonoBehaviour {
 
 	void Update(){
 		if (score == WinCon) {
-			P1Win.SetActive(true);
 			Time.timeScale = 0;
+			P1Win.SetActive(true);
 		}
 		HP_Bar.value = score;
 	}
