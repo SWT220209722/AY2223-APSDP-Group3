@@ -9,7 +9,8 @@ public class CountDown : MonoBehaviour {
 
 	Text text;
 
-	void Start () {
+	void Start () 
+	{
 		text = GetComponent<Text>();
 	}
 
