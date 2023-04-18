@@ -11,11 +11,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
+        private bool m_Attack;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
+        Animator anim;
 
-        
         private void Start()
         {
+                anim = GetComponent<Animator>();
+
             // get the transform of the main camera
             if (Camera.main != null)
             {
@@ -39,7 +42,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+
+            if (Input.GetButtonDown("Fire1") &&
+                !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                anim.SetTrigger("attack");
         }
+
 
 
         // Fixed update is called in sync with physics
