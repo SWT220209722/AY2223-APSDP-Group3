@@ -6,6 +6,7 @@ public class GotHit : MonoBehaviour
 {
     public GameObject hitFX;
     public AudioClip hitsound;
+    public int EnmPID;
 
     AudioSource audiosource;
 
@@ -32,7 +33,7 @@ public class GotHit : MonoBehaviour
         else*/ if (col.gameObject.tag == "Swd")
         {
                 Debug.Log("Atk Pt + 1");
-                ScoreCount.UpdateScore(1);
+                ScoreCount.UpdateScore(EnmPID, 1);
 
                 audiosource.PlayOneShot(hitsound);
                 Debug.Log("sfx played");
