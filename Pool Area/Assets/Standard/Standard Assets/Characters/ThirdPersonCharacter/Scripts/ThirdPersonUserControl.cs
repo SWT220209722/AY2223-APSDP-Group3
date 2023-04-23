@@ -45,7 +45,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             if (Input.GetButtonDown("Fire1") &&
                 !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            
                 anim.SetTrigger("attack");
+            
         }
 
 

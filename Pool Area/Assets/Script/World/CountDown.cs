@@ -20,8 +20,8 @@ public class CountDown : MonoBehaviour {
 			text.text = Mathf.Ceil(myTimer).ToString();
 		}else {
 			Time.timeScale = 0; 
-			TimesUpPopUp.SetActive (true);
+			//TimesUpPopUp.SetActive (true);
 		}
-		
+
 	}
 }
