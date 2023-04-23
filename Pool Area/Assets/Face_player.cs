@@ -1,27 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class ATK : MonoBehaviour
-{
-    Animator ani;
 
+public class Face_player : MonoBehaviour
+{
+    public GameObject player2;
+    
     // Start is called before the first frame update
     void Start()
     {
-        ani = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.tag == "Def")
-        {
-            ani.SetTrigger("Stab");
-        }
+        if (Input.GetButtonDown("Fire1"))
+        transform.LookAt(player2.transform);
     }
 }
