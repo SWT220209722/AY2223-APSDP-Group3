@@ -32,13 +32,24 @@ public class GotHit : MonoBehaviour
         }
         else*/ if (col.gameObject.tag == "Swd")
         {
+            if (EnmPID == 1) {
                 Debug.Log("Atk Pt + 1");
-                ScoreCount.UpdateScore(EnmPID, 1);
+                ScoreCount1.UpdateScore(1, 1);
 
                 audiosource.PlayOneShot(hitsound);
                 Debug.Log("sfx played");
                 //Instantiate (hitFX, col.contacts[0].point, Quaternion.identity);
                 Debug.Log("hitfx played");
+            } else if (EnmPID == 2)
+            {
+                Debug.Log("Atk Pt + 1");
+                ScoreCount2.UpdateScore(2, 1);
+
+                audiosource.PlayOneShot(hitsound);
+                Debug.Log("sfx played");
+                //Instantiate (hitFX, col.contacts[0].point, Quaternion.identity);
+                Debug.Log("hitfx played");
+            }
         }
     }
 
