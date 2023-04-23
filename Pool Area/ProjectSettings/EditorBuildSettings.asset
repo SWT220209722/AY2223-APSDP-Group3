@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level 1.unity
     guid: 6734ed62c0eb543469dea454cc933eed
+  - enabled: 1
+    path: Assets/Archer Game.unity
+    guid: efbf4ac1302ae0d4faf0c7f9f4fa36de
   m_configObjects: {}
