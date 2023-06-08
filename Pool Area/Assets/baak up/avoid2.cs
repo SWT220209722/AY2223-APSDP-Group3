@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class avoid : MonoBehaviour
+public class avoid2: MonoBehaviour
 {
 private float speed = 5.0f;
 public GameObject P1;
-
 public GameObject P2;
 public Animator animator;
 public float playerX;
@@ -22,7 +21,7 @@ public float playerZ;
     {
     playerX =P1.transform.position.x ;
    playerZ = P2.transform.position.z ;
-        if(Input.GetKey(KeyCode.G)){
+        if(Input.GetKey(KeyCode.J)){
         animator.SetBool("avoid", true);
         transform.position = new Vector3(playerX,3.18f,playerZ);
         transform.Translate(Vector3.forward *(-0.5f*speed) * Time.deltaTime);
