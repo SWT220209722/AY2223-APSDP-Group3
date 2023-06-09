@@ -6,6 +6,7 @@ public class CountDown : MonoBehaviour {
 
 	public float myTimer=5;
 	public GameObject TimesUpPopUp;
+	public GameObject TextPopUp;
 
 	Text text;
 
@@ -20,7 +21,8 @@ public class CountDown : MonoBehaviour {
 			text.text = Mathf.Ceil(myTimer).ToString();
 		}else {
 			Time.timeScale = 0; 
-			//TimesUpPopUp.SetActive (true);
+			TimesUpPopUp.SetActive (true);
+			TextPopUp.SetActive (true);
 		}
 
 	}
