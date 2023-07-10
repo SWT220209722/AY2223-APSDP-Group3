@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Archer Game.unity
     guid: efbf4ac1302ae0d4faf0c7f9f4fa36de
+  - enabled: 1
+    path: Assets/Fencing tuto.unity
+    guid: 52c147831c55bf5499261a354eac0736
   m_configObjects: {}
