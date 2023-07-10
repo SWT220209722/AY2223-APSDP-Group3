@@ -28,7 +28,7 @@ public class ScoreCount1 : MonoBehaviour {
 			PlayerPrefs.SetInt("Player 1", P1score);
 			Debug.Log(PlayerPrefs.GetInt("Player 1", 1));
 			PlayerPrefs.Save();
-			P1scoreText.text= "Score: " + P1score.ToString();
+			P1scoreText.text= "P1 Score: " + P1score.ToString();
 		}
 		/*else if (PID == 2){
 			P2score += value;

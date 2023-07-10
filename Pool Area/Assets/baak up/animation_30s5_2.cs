@@ -17,11 +17,11 @@ public class animation_30s5_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.O))
+        if (Input.GetKey(KeyCode.UpArrow))
             animator.SetTrigger("attack");
         // Input.GetKey(KeyCode.w)
 
-        if (Input.GetButton("Vertical2") || Input.GetButton("Horizontal2"))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
            animator.SetBool("move 0", true);
         else
             animator.SetBool("move 0", false);

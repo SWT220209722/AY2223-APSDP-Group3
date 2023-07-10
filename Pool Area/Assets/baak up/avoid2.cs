@@ -21,7 +21,7 @@ public float playerZ;
     {
     playerX =P1.transform.position.x ;
    playerZ = P2.transform.position.z ;
-        if(Input.GetKey(KeyCode.J)){
+        if(Input.GetKey(KeyCode.DownArrow)){
         animator.SetBool("avoid", true);
         transform.position = new Vector3(playerX,3.18f,playerZ);
         transform.Translate(Vector3.forward *(-0.5f*speed) * Time.deltaTime);

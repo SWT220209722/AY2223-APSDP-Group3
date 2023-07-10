@@ -34,7 +34,7 @@ public class ScoreCount2 : MonoBehaviour {
 			P2score += value;
 			PlayerPrefs.SetInt("Player 2", P2score);
 			PlayerPrefs.Save();
-			P2scoreText.text = "Score: " + P2score.ToString();
+			P2scoreText.text = "P2 Score: " + P2score.ToString();
 		}
 	}
 
