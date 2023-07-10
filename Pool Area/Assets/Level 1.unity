@@ -167,6 +167,7 @@ MonoBehaviour:
   hitFX: {fileID: 0}
   hitsound: {fileID: 0}
   EnmPID: 1
+  animator: {fileID: 0}
 --- !u!114 &174225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +265,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2214671780200814635, guid: cc646a38111dfa8479284fb66c94445e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2214671780200814635, guid: cc646a38111dfa8479284fb66c94445e, type: 3}
       propertyPath: m_TagString
       value: Swd
       objectReference: {fileID: 0}
@@ -279,6 +284,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 5b1970a4b7357914f9d9c2b222a1d87b, type: 2}
+    - target: {fileID: 5927742080658077590, guid: cc646a38111dfa8479284fb66c94445e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5778239
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927742080658077590, guid: cc646a38111dfa8479284fb66c94445e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6915959
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: cc646a38111dfa8479284fb66c94445e, type: 3}
@@ -4404,6 +4417,7 @@ MonoBehaviour:
   hitFX: {fileID: 0}
   hitsound: {fileID: 0}
   EnmPID: 1
+  animator: {fileID: 0}
 --- !u!114 &1746873532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4788,6 +4802,7 @@ MonoBehaviour:
   hitFX: {fileID: 0}
   hitsound: {fileID: 0}
   EnmPID: 2
+  animator: {fileID: 0}
 --- !u!114 &2042343858
 MonoBehaviour:
   m_ObjectHideFlags: 0

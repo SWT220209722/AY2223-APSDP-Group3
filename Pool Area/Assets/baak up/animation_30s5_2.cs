@@ -17,7 +17,7 @@ public class animation_30s5_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
             animator.SetTrigger("attack");
         // Input.GetKey(KeyCode.w)
 

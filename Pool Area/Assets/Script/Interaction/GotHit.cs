@@ -9,23 +9,28 @@ public class GotHit : MonoBehaviour
     public int EnmPID;
 
     AudioSource audiosource;
-
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+    
     }
 
     void OnCollisionEnter(Collision col)
     {
-        /*if (col.gameObject.tag == "Swd")
+   /* if (col.gameObject.tag == "Swd")
+   / animator.SetBool("GotHit",true);
+    else
+    animator.SetBool("GotHit",false);    
+    /*if (col.gameObject.tag == "Swd")
         {
             Debug.Log("Swd Pt + 1");
             ScoreCount.UpdateScore(1);
@@ -35,7 +40,7 @@ public class GotHit : MonoBehaviour
             if (EnmPID == 1) {
                 Debug.Log("Atk Pt + 1");
                 ScoreCount1.UpdateScore(1, 1);
-
+              
                 audiosource.PlayOneShot(hitsound);
                 Debug.Log("sfx played");
                 //Instantiate (hitFX, col.contacts[0].point, Quaternion.identity);
@@ -44,7 +49,7 @@ public class GotHit : MonoBehaviour
             {
                 Debug.Log("Atk Pt + 1");
                 ScoreCount2.UpdateScore(2, 1);
-
+             
                 audiosource.PlayOneShot(hitsound);
                 Debug.Log("sfx played");
                 //Instantiate (hitFX, col.contacts[0].point, Quaternion.identity);
