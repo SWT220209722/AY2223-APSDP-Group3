@@ -167,6 +167,7 @@ MonoBehaviour:
   hitFX: {fileID: 0}
   hitsound: {fileID: 0}
   EnmPID: 1
+  time: 0.5
   animator: {fileID: 0}
 --- !u!114 &174225
 MonoBehaviour:
@@ -4417,6 +4418,7 @@ MonoBehaviour:
   hitFX: {fileID: 0}
   hitsound: {fileID: 0}
   EnmPID: 1
+  time: 0.5
   animator: {fileID: 0}
 --- !u!114 &1746873532
 MonoBehaviour:
@@ -4802,6 +4804,7 @@ MonoBehaviour:
   hitFX: {fileID: 0}
   hitsound: {fileID: 0}
   EnmPID: 2
+  time: 0.5
   animator: {fileID: 0}
 --- !u!114 &2042343858
 MonoBehaviour:

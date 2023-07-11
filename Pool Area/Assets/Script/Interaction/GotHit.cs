@@ -7,7 +7,7 @@ public class GotHit : MonoBehaviour
     public GameObject hitFX;
     public AudioClip hitsound;
     public int EnmPID;
-
+    public float time;
     AudioSource audiosource;
     public Animator animator;
 
@@ -21,15 +21,23 @@ public class GotHit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+
+  
     }
 
     void OnCollisionEnter(Collision col)
     {
-   /* if (col.gameObject.tag == "Swd")
-   / animator.SetBool("GotHit",true);
-    else
-    animator.SetBool("GotHit",false);    
+  
+     /*  if (col.gameObject.tag == "Swd")  
+    animator.SetBool("GotHit",true);
+    
+    
+    time -=Time.deltaTime ;
+    if(time<0)
+    animator.SetBool("GotHit",false);
+
+
+//    animator.SetBool("GotHit",false);    
     /*if (col.gameObject.tag == "Swd")
         {
             Debug.Log("Swd Pt + 1");
