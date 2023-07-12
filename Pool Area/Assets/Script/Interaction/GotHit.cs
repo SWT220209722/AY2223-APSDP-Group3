@@ -27,23 +27,17 @@ public class GotHit : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-  
-     /*  if (col.gameObject.tag == "Swd")  
-    animator.SetBool("GotHit",true);
-    
-    
-    time -=Time.deltaTime ;
-    if(time<0)
-    animator.SetBool("GotHit",false);
-
-
-//    animator.SetBool("GotHit",false);    
-    /*if (col.gameObject.tag == "Swd")
-        {
-            Debug.Log("Swd Pt + 1");
-            ScoreCount.UpdateScore(1);
+        if (col.gameObject.tag == "Swd"){
+               animator.SetTrigger("GotHit");
         }
-        else*/ if (col.gameObject.tag == "Swd")
+
+            /*if (col.gameObject.tag == "Swd")
+                {
+                    Debug.Log("Swd Pt + 1");
+                    ScoreCount.UpdateScore(1);
+                }
+                else*/
+            if (col.gameObject.tag == "Swd")
         {
             if (EnmPID == 1) {
                 Debug.Log("Atk Pt + 1");
