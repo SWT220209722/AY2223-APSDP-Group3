@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 
 public class ArrowShoot: MonoBehaviour
 {
@@ -18,8 +18,9 @@ public class ArrowShoot: MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(ScreenCenter);
         if(Physics.Raycast(ray, out hit, range))
         {
-            GameObject ArrowInstantiate = GameObject.Instantiate(ArrowPrefab, ArrowSpawnPosition.transform.position, ArrowSpawnPosition.transform.rotation) as GameObject;
+            GameObject ArrowInstantiate = Instantiate(ArrowPrefab, ArrowSpawnPosition.transform.position, ArrowSpawnPosition.transform.rotation) as GameObject;
             ArrowInstantiate.GetComponent<Arrow>().setTarget(hit.point);
+           
         }
     }
 }

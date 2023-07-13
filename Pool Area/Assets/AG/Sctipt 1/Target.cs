@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour {
     public int scoreValue = 10;
-
+ 
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Arrow") {
             // Increase the player's score by the score value of this target

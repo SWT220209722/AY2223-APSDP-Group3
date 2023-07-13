@@ -31,15 +31,16 @@ public class GotHit2 : MonoBehaviour
         }
         else*/ if (col.gameObject.tag == "Arrow")
         {
-            if (EnmPID == 1) {
+        
                 Debug.Log("Atk Pt + 1");
                 ArcheryScoreCount.UpdateScore(1, 1);
+                
 
                 audiosource.PlayOneShot(hitsound);
                 Debug.Log("sfx played");
                 //Instantiate (hitFX, col.contacts[0].point, Quaternion.identity);
                 Debug.Log("hitfx played");
-            } 
+            
 
             /*if (EnmPID == 3) {
                 Debug.Log("Atk Pt + 3");
