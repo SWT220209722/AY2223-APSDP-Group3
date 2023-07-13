@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Fencing tuto.unity
     guid: 52c147831c55bf5499261a354eac0736
+  - enabled: 1
+    path: Assets/Archery tuto.unity
+    guid: b72d155ab64b7a341b3f8ca9f1956c93
   m_configObjects: {}
