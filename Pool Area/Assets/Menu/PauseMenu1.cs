@@ -33,5 +33,8 @@ void Update()
 	public void ExitGame () {
 		Time.timeScale = 1;
 		SceneManager.LoadScene("MainMenu");
+
+		if(Input.GetKeyDown(KeyCode.L))
+			Application.Quit();
 	}
 }
